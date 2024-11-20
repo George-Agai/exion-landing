@@ -78,6 +78,9 @@ p{
   justify-content: space-between;
   width: 94%;
 }
+.nav-section a{
+  padding-left: 40px;
+}
 .download-button{
   background-color: transparent;
   border: 2px solid var(--primary-color);
