@@ -9,7 +9,7 @@ export default function SectionImageRight({ image, header, description }) {
                 <p>{description}</p>
                 <PlaystoreBanner />
             </div>
-            <img src={image} style={{ width: '400px', paddingLeft: '60px' }} loading='lazy' />
+            <img src={image} loading='lazy' className='image-right'/>
         </div>
     )
 }
