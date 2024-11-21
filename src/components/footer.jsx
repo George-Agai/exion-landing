@@ -10,7 +10,7 @@ export default function Footer() {
                 <a href='https://www.exion.finance'>
                     <ExionLogo/>
                 </a>
-                <p style={{fontSize: '25px', width: '40%', paddingBottom: '30px'}}>Connecting African communities to a secure, stable and accessible financial ecosystem</p>
+                <p className='connecting-text'>Connecting African communities to a secure, stable and accessible financial ecosystem</p>
                 <PlaystoreBanner />
                 <p style={{fontSize: '20px', paddingTop: '20px'}}>support@exion.com</p>
                 <div className='copyright-div flex-row'>

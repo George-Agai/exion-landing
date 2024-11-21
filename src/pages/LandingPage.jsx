@@ -32,7 +32,7 @@ export default function LandingPage() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-  const para = <p>Greatrer</p>
+
   return (
     <div className='main-container'>
 
@@ -46,10 +46,12 @@ export default function LandingPage() {
       </nav>
 
       <div className='first-page' loading='lazy'>
-        <h1>Crypto Payments made Easy✨</h1>
-        <p>Buy, send and spend your stablecoins on day to day utilities and transactions all from your wallet</p>
-        <div style={{ marginBottom: '60px' }} >
-          <PlaystoreBanner />
+        <div className='first-page-content'>
+          <h1>Crypto Payments made Easy✨</h1>
+          <p>Buy, send and spend your stablecoins on day to day utilities and transactions all from your wallet</p>
+          <div>
+            <PlaystoreBanner />
+          </div>
         </div>
         <img src={landingImage} alt='Landing Image' className='landing-image' loading='lazy' />
       </div>
@@ -57,41 +59,41 @@ export default function LandingPage() {
       <div className='section1'>
         <SectionImageRight
           image={sectionOneImage}
-          header = {'Simple, fast, secure'}
+          header={'Simple, fast, secure'}
           description={'Simple to use, lightning-fast transactions protected by blockchain security. —Buy, pay, send, and manage your stablecoins effortlessly wherever life takes you🤙'}
         />
       </div>
       <div className='section2'>
         <SectionImageLeft
           image={sectionTwoImage}
-          header = {'Direct Crypto-to-mobile integration'}
+          header={'Direct Crypto-to-mobile integration'}
           description={'Send money from your wallet to a friend’s phone number and they receive the money instantly in their mobile money account. Simple with no third party complexities😌'}
         />
       </div>
       <div className='section3'>
         <SectionImageRight
           image={sectionThreeImage}
-          header = {'Localized stablecoins for everyday transactions'}
+          header={'Localized stablecoins for everyday transactions'}
           description={'With localized stablecoins like CKES which align with local currencies, we make everyday transactions easy and familiar✨'}
         />
       </div>
       <div className='section4'>
         <SectionImageLeft
           image={sectionFourImage}
-          header = {'Cross-border payments'}
+          header={'Cross-border payments'}
           description={'Send money effortlessly across Africa at close to no transaction cost and with lightning speed⚡️'}
         />
       </div>
 
       <div className='bottom-container'>
-        <div className='flex-row'>
+        <div className='bottom-section'>
           <div className='left-section'>
             <h1>Exion — Empowering Africa’s financial future with blockchain</h1>
-            <PlaystoreBanner/>
+            <PlaystoreBanner />
           </div>
-          <img src={appImage} alt='Exion' style={{width: '450px'}}/>
+          <img src={appImage} alt='Exion' className='exion-img'/>
         </div>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   )
