@@ -47,7 +47,7 @@ p{
 }
 .first-page {
   width: 100.6%;
-  height: 153vh;
+  height: 156vh;
   background-image: url('./assets/backgroundImages/landingBackground.webp');
   /* background-size: cover; */
 
@@ -135,7 +135,7 @@ p{
   height: 90vh;
   width: 100.6%;
   background-image: url('./assets/backgroundImages/backgroundBlob1.webp');
-  background-position: right 180px;
+  background-position: right 150px;
   background-size: 1150px;
   background-repeat: no-repeat;
   padding-top: 22%;
