@@ -38,7 +38,7 @@ export default function LandingPage() {
 
       <nav className={`navbar ${scrolling ? 'scrolled' : ''}`} style={{ border: 'none' }}>
         <section className='nav-section'>
-          <a href='https://www.tineydonkey.shop'>
+          <a href='https://www.exion.finance'>
             <ExionLogo />
           </a>
           <button className={`download-button flex-row ${scrolling ? 'scrolled-download-button' : ''}`}>Download App</button>
