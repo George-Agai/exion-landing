@@ -9,6 +9,8 @@ import sectionOneImage from '../assets/images/sectionOneImage.webp'
 import sectionTwoImage from '../assets/images/sectionTwoImage.webp'
 import sectionThreeImage from '../assets/images/sectionThreeImage.webp'
 import sectionFourImage from '../assets/images/sectionFourImage.webp'
+import mento from '../assets/icons/mento.svg'
+import celo from '../assets/icons/celo.png'
 import appImage from '../assets/images/appImage.webp'
 import Footer from '../components/footer'
 
@@ -85,6 +87,17 @@ export default function LandingPage() {
         />
       </div>
 
+      <div className="partners-div">
+        <div className='divider'></div>
+        <div style={{width: '100%'}} className='flex-column'>
+          <h1>Our Partners</h1>
+          <div className='flex-row' style={{width: '80%', justifyContent: 'space-around'}}>
+            <img src={mento} alt='mento' className='mento-logo'/>
+            <img src={celo} alt='celo' className='celo-logo'/>
+          </div>
+        </div>
+      </div>
+
       <div className='bottom-container'>
         <div className='bottom-section'>
           <div className='left-section'>
@@ -93,8 +106,11 @@ export default function LandingPage() {
           </div>
           <img src={appImage} alt='Exion' className='exion-img'/>
         </div>
+
+        
         <Footer />
       </div>
+
     </div>
   )
 }
