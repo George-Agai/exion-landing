@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function ExionLogo() {
     return (
-        <svg width="105" height="38" viewBox="0 0 181 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 181 69" fill="none" xmlns="http://www.w3.org/2000/svg" className='exion-logo'>
             <g filter="url(#filter0_i_471_617)">
                 <circle cx="34.1958" cy="34.1958" r="34.1958" fill="white" />
             </g>
