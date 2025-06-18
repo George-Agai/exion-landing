@@ -6,7 +6,7 @@ export default function TermsOfUse() {
         window.scrollTo({ top: 0, behavior: 'auto' });
     }, []);
     return (
-        <div className='policy-container' style={{ paddingLeft: 24, paddingRight: 24 }}>
+        <div className='policy-container' style={{ paddingLeft: 24, paddingRight: 24, paddingTop: 30 }}>
             <h1 style={{ marginBottom: 16 }}>Terms of Use</h1>
 
             <p style={{ marginBottom: 16 }}>
