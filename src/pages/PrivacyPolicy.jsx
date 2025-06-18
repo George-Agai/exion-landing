@@ -6,7 +6,7 @@ export default function PrivacyPolicy() {
         window.scrollTo({ top: 0, behavior: 'auto' });
     }, []);
     return (
-        <div className='policy-container' style={{ paddingLeft: 24, paddingRight: 24 }}>
+        <div className='policy-container' style={{ paddingLeft: 24, paddingRight: 24, paddingTop: 30  }}>
             <h1 style={{ marginBottom: 16 }}>Privacy Policy &amp; Security</h1>
             <p style={{ marginBottom: 24 }}>
                 Your engagement with and utilization of this website and the Exion Pay Mobile App signify your agreement with the privacy protocols delineated in this Policy. If you are in disagreement, you must refrain from accessing or employing the Website. Exion Pay Finance retains the prerogative to modify this Policy at any given point. Continued use of the website or software subsequent to the publication of such alterations implies your acceptance of the updated policy. It is advisable to periodically visit this page to review the current policy.
