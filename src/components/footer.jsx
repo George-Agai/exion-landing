@@ -19,7 +19,7 @@ export default function Footer() {
                 <Link style={{fontSize: '17px', marginLeft: '25px', color: '#00C48F', textDecoration: 'none'}} to='/privacy-policy'>Privacy policy</Link>
                 </div>
 
-                <a href="mailto:exionfinance@gmail.com" style={{fontSize: '16px', marginTop: '30px', textDecoration: 'none', color: 'white'}}>exionfinance@gmail.com</a>
+                <a href="mailto:info@exion.finance" style={{fontSize: '16px', marginTop: '30px', textDecoration: 'none', color: 'white'}}>info@exion.finance</a>
 
                 <div className='copyright-div flex-row'>
                     <p>Exion-All rights reserved { new Date().getFullYear()}</p>

@@ -40,10 +40,16 @@ export default function LandingPage() {
 
       <nav className={`navbar ${scrolling ? 'scrolled' : ''}`} style={{ border: 'none' }}>
         <section className='nav-section'>
-          <a href='https://www.exion.finance'>
+          <a className='nav-section-logo' href='https://www.exion.finance'>
             <ExionLogo />
           </a>
-          <button className={`download-button flex-row ${scrolling ? 'scrolled-download-button' : ''}`}>Download App</button>
+          <a
+            className={`download-button flex-row ${scrolling ? 'scrolled-download-button' : ''}`}
+            href='https://play.google.com/store/apps/details?id=com.exion.app'
+            target='new'
+          >
+            Download App
+          </a>
         </section>
       </nav>
 
@@ -89,11 +95,11 @@ export default function LandingPage() {
 
       <div className="partners-div">
         <div className='divider'></div>
-        <div style={{width: '100%'}} className='flex-column'>
+        <div style={{ width: '100%' }} className='flex-column'>
           <h1>Our Partners</h1>
-          <div className='flex-row' style={{width: '80%', justifyContent: 'space-around'}}>
-            <img src={mento} alt='mento' className='mento-logo'/>
-            <img src={celo} alt='celo' className='celo-logo'/>
+          <div className='flex-row' style={{ width: '80%', justifyContent: 'space-around' }}>
+            <img src={mento} alt='mento' className='mento-logo' />
+            <img src={celo} alt='celo' className='celo-logo' />
           </div>
         </div>
       </div>
@@ -104,10 +110,10 @@ export default function LandingPage() {
             <h1>Exion — Empowering Africa’s financial future with blockchain</h1>
             <PlaystoreBanner />
           </div>
-          <img src={appImage} alt='Exion' className='exion-img'/>
+          <img src={appImage} alt='Exion' className='exion-img' />
         </div>
 
-        
+
         <Footer />
       </div>
 
