@@ -125,7 +125,7 @@ p {
   width: 94%;
 }
 
-.nav-section a {
+.nav-section-logo {
   padding-left: 40px;
 }
 
@@ -138,6 +138,8 @@ p {
   border-radius: 30px;
   padding: 12px 14px;
   font-family: "DM Sans", serif;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .scrolled-download-button {
@@ -690,7 +692,7 @@ p {
     justify-content: center;
   }
 
-  .nav-section a {
+  .nav-section-logo {
     padding-left: 0px;
   }
 
