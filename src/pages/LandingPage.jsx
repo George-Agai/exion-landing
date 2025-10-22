@@ -11,6 +11,8 @@ import sectionThreeImage from '../assets/images/sectionThreeImage.webp'
 import sectionFourImage from '../assets/images/sectionFourImage.webp'
 import mento from '../assets/icons/mento.svg'
 import celo from '../assets/icons/celo.png'
+import circle from '../assets/icons/circle.png'
+import prezenti from '../assets/icons/prezenti.png'
 import appImage from '../assets/images/appImage.webp'
 import Footer from '../components/footer'
 
@@ -93,7 +95,7 @@ export default function LandingPage() {
         />
       </div>
 
-      <div className="partners-div">
+      {/* <div className="partners-div">
         <div className='divider'></div>
         <div style={{ width: '100%' }} className='flex-column'>
           <h1>Our Partners</h1>
@@ -102,12 +104,28 @@ export default function LandingPage() {
             <img src={celo} alt='celo' className='celo-logo' />
           </div>
         </div>
+      </div> */}
+
+      <div className="partners-div">
+        <div className="divider"></div>
+
+        <div className="partners-content">
+          <h1>Our Partners</h1>
+
+          <div className="partners-grid">
+            <img src={mento} alt="mento" className="partner-logo" />
+            <img src={celo} alt="celo" className="partner-logo" />
+            <img src={circle} alt="circle" className="partner-logo" />
+            <img src={prezenti} alt="prezenti" className="partner-logo" />
+          </div>
+        </div>
       </div>
+
 
       <div className='bottom-container'>
         <div className='bottom-section'>
           <div className='left-section'>
-            <h1>Exion — Empowering Africa’s financial future with blockchain</h1>
+            <h1>Exion - Empowering Africa’s financial future with blockchain</h1>
             <PlaystoreBanner />
           </div>
           <img src={appImage} alt='Exion' className='exion-img' />
