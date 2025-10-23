@@ -15,6 +15,8 @@ import circle from '../assets/icons/circle.png'
 import prezenti from '../assets/icons/prezenti.png'
 import appImage from '../assets/images/appImage.webp'
 import Footer from '../components/footer'
+import FAQSection from '../components/faqSection'
+import OurServices from '../components/ourServices'
 
 export default function LandingPage() {
 
@@ -70,14 +72,14 @@ export default function LandingPage() {
         <SectionImageRight
           image={sectionOneImage}
           header={'Simple, fast, secure'}
-          description={'Simple to use, lightning-fast transactions protected by blockchain security. —Buy, pay, send, and manage your stablecoins effortlessly wherever life takes you🤙'}
+          description={'Simple to use, lightning-fast transactions protected by blockchain technology. Buy, send and spend your stablecoins effortlessly wherever life takes you🤙'}
         />
       </div>
       <div className='section2'>
         <SectionImageLeft
           image={sectionTwoImage}
           header={'Direct Crypto-to-mobile integration'}
-          description={'Send money from your wallet to a friend’s phone number and they receive the money instantly in their mobile money account. Simple with no third party complexities😌'}
+          description={'Make payments or send money straight from your wallet, and it’s received instantly in mobile money. No middlemen, no waiting, just fast and easy transfers😌'}
         />
       </div>
       <div className='section3'>
@@ -95,22 +97,21 @@ export default function LandingPage() {
         />
       </div>
 
-      {/* <div className="partners-div">
-        <div className='divider'></div>
-        <div style={{ width: '100%' }} className='flex-column'>
-          <h1>Our Partners</h1>
-          <div className='flex-row' style={{ width: '80%', justifyContent: 'space-around' }}>
-            <img src={mento} alt='mento' className='mento-logo' />
-            <img src={celo} alt='celo' className='celo-logo' />
-          </div>
-        </div>
-      </div> */}
+
 
       <div className="partners-div">
-        <div className="divider"></div>
+        {/* <div className="divider"></div> */}
 
         <div className="partners-content">
+          <div className="faq-badge">
+            <span>Partners</span>
+          </div>
           <h1>Our Partners</h1>
+          <div style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <p className="faq-description" style={{ width: '90%', paddingBottom: '16px' }}>
+              Our amazing partners help us bring simple, secure and instant payments to people everywhere. Together, we’re making stablecoin transactions more accessible than ever.
+            </p>
+          </div>
 
           <div className="partners-grid">
             <img src={mento} alt="mento" className="partner-logo" />
@@ -120,6 +121,10 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      <OurServices />
+
+      <FAQSection />
 
 
       <div className='bottom-container'>
